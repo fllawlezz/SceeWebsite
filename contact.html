@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./contactPage/contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Laila|Montserrat:400,600,700,800" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SCEE - Contact</title>
+	<link rel="icon" href="./images/tabPic.png">
+	<script src="./contactPage/contactPageFunctions.js"></script>
+</head>
+<body>
+	<div id = "container">
+		<div id = "navBar">
+			<!-- <h1><a href="index.html" id = "title">SCEE</a></h1> -->
+			<a href="index"><img src="./images/clubLogo.png" id = "logo"></a>
+			<ul id = "navItems">
+				<li><a href="index">Home</a></li>
+				<li><a href="AboutPage">About</a></li>
+				<li><a href="blog">Blog</a></li>
+				<li><a href="contact" id = "contactItem">Contact</a></li>
+			</ul>
+			<input type="image" src = "./images/hamburger.png" id = "hamburgerButton" onclick = "handeMobileNav();">
+			<div id = "darkView">
+
+			</div>	
+			<div id = "slideInMenu">
+				<ul id = "mobileNavBar">
+					<li class = "mobileNavCell"><a href="index.html">Home</a></li>
+					<li class = "mobileNavCell"><a href="./AboutPage">About</a></li>
+					<li class = "mobileNavCell"><a href="./blog">Blog</a></li>
+					<li class = "mobileNavCell"><a href="./contact" id = "contactItem">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+
+	<div id = "mainView">
+
+<!-- 		<div id = "successDiv">
+			<h1>Thankyou! We will try to get back to you within 1-2 business days.</h1>
+		</div> -->
+
+		<div id = "contactUsFields">
+			<h1 id = "contactUsTitle">Contact Us</h1>
+			<input class = "normalField" placeholder = "Your Name" type="text" name="name" id = "contactNameField">
+			<input class = "normalField" placeholder = "Your email" type="email" name="email" id = "contactEmailField">
+			<textarea id = "textArea" placeholder="Tell us what's on your mind" rows="4" cols="50"></textarea>
+
+			<button id = "submitButton" onclick="submitContactRequest();">Submit</button>
+		</div>
+	</div>
+
+		<footer id = "footerView">
+			<div id = "subscribeView">
+				<h3>SUBSCRIBE</h3>
+				<h4 id = "subscribeDescription">Sign up with your email address to recieve news and updates from us.</h4>
+				<input type="text" name="firstName" class = "signUpField" placeholder="First Name" id = "firstNameField">
+				<input type="text" name="lastName" class = "signUpField" placeholder="Last Name" id = "lastNameField">
+				<input type="email" name="email" class = "signUpField" placeholder="Email" id = "emailField">
+				<button id = "signUpButton" onclick="submitSubscribe();">SIGN UP</button>
+				<h5 id = "spamDescription">We promise we won't spam you.</h5>
+				<h2 id = "subscribedMessage">Thank you! You will hear from us soon!</h2>
+
+				<h2 id = "socialMediaTitle">Follow us on Social Media</h2>
+				<div id = "socialMediaDiv">
+					<a href="https://www.instagram.com/scee.ucsc/"><img src="./images/instagram.png" id = "instagram"></a>
+					<a href="https://www.facebook.com/UCSC-Entrepreneurship-Club-381648289049770/?modal=admin_todo_tour"><img src="./images/facebook.png" id = "facebook"></a>
+					<a href="https://www.linkedin.com/company/scee-student-creativity-and-entrepreneurial-empowerment"><img src="./images/linkedin.png" id = "linkedin"></a>
+				</div>
+			</div>
+			
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./homePage/homePage.css">
+	<link href="https://fonts.googleapis.com/css?family=Laila|Montserrat:400,600,700,800" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SCEE - Home</title>
+	<link rel="icon" href="./images/tabPic.png">
+	<script src="./homePage/homePageFunctions.js"></script>
+</head>
+<body>
+
+	<div id = "container">
+
+		<div id = "navBar">
+			<a href="index.html"><img src="./images/clubLogo.png" id = "logo"></a>
+			<!-- <h1><a href="index.html" id = "title">SCEE</a></h1> -->
+			<ul id = "navItems">
+				<li><a href="index.html" id = "homeLink">Home</li>
+				<li><a href="./AboutPage">About</a></li>
+				<li><a href="./blog">Blog</a></li>
+				<li><a href="./contact">Contact</a></li>
+				<li id = "loginButtonLi"><button id = "loginButton">Login</button></li>
+			</ul>
+			<!-- <button>Log In</button> -->
+			<input type="image" src = "./images/hamburger.png" id = "hamburgerButton" onclick = "handeMobileNav();">
+			<div id = "darkView">
+
+			</div>	
+			<div id = "slideInMenu">
+				<ul id = "mobileNavBar">
+					<li class = "mobileNavCell"><a href="index.html" id = "homeLink">Home</a></li>
+					<li class = "mobileNavCell"><a href="./AboutPage">About</a></li>
+					<li class = "mobileNavCell"><a href="./blog">Blog</a></li>
+					<li class = "mobileNavCell"><a href="./contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id = "mainView"> 
+
+			<div id = "prevButtonDiv">
+					<!-- <button id = "backButton"></button> -->
+					<input type="image" src="./images/leftArrow.png" id = "backButton">
+			</div>
+			<div id = "carouselContainer">
+
+				<div id = "carouselSlide">
+					<img src="./images/slideShowImages/slideShowImage0.png" class = "slideShowImage">
+					<img src="./images/slideShowImages/slideShowImage1.png" class = "slideShowImage" onclick = "handleToEvents();">
+					<img src="./images/slideShowImages/slideShowImage2.png" class = "slideShowImage" onclick = "handleToSignUp();">
+				</div>
+
+				<!-- <div class = "fadingSlide">
+					<img src="./images/slideShowImages/slideShowImage1.png" class = "slideShowImage">
+				</div> -->
+
+				
+				
+
+<!-- 				<div class = "fadingSlide">
+					<img src="./images/slideShowImages/slideShowImage2.png" class = "slideShowImage">
+				</div> -->
+
+
+<!-- 				<div id = "sliderTestImgSize">
+					
+				</div> -->
+				
+			</div>
+
+			<div id = "nextButtonDiv">
+					<input type="image" src="./images/rightArrow.png" id = "nextButton">
+				</div>
+
+			<!-- main view needs to have a slider that can slide -->
+
+
+			<!-- <div id = "sloganAndButtons">
+				<h1 id = "slogan">SCEE. Empowering UCSC students to follow their dreams. </h1>
+				<button id = "ourTeam" onclick="handleLearnMorePressed();">Our Team</button>
+				<button id = "ourWorkshops" onclick="handleWorkShopsPressed();">Our Workshops</button>
+			</div> -->
+
+
+			<div id = "newsArea">
+				<div id = "newsAreaMainView">
+					<h1>News</h1>
+					<ul id = "newsList">
+						
+						<li class = "newsCell">
+							<h3 class = "newsCellTitle">Dave Speaks</h3>
+							<img class = "newsCellImage" src="./images/homePageNewsImages/newsImage0.png">
+							<p class = newsCellDescription>On May 22th, Dave Evans, author of the best selling novel Designing Your Life: How to Build a Well-lived, Joyful Life, will speak on UCSC campus. The tenative location is Merrill Cultural Center. Subscribe below to be updated on this event.</p>
+						</li>
+
+						<li class = "newsCell">
+							<h3 class = "newsCellTitle">First LinkedIn Workshop</h3>
+							<img class = "newsCellImage" src="./images/homePageNewsImages/newsImage1.png">
+							<p class = newsCellDescription>SCEE will be hosting a LinkedIn workshop on May 16th with Dianthe Skurko. We at SCEE believe that having a professional LinkedIn profile is key to a successful career. Join us at Crown Writing Center to revamp you LinkedIn account!</p>
+						</li>
+						<li class = "newsCell">
+							<h3 class = "newsCellTitle">SCEE Launches</h3>
+							<img class = "newsCellImage" src="./images/homePageNewsImages/newsImage2.jpg">
+							<p class = newsCellDescription>SCEE stands for, Students for Creativity and Entrepreneurial Empowerment. We want to help you reach your dreams! It doesn't matter what your goals are for your idea. Whether that be to start a new business or save the planet, SCEE has the resources to help you succeed!</p>
+						</li>
+
+					</ul>
+				</div>
+				
+				<!-- <img src="./images/lineDivider.png" id = "divider"> -->
+
+			</div>
+
+
+
+			<!-- <div id = "partnersArea">
+				<div id = "partnersMainView">
+					<div id = "partnersDescription">
+						<h2>Our Partners</h2>
+						<p>We want to be partners with people who share our vision. We seek to have personal relationships with our partners and aim to provide connections between them and future entrepreneurs.</p>
+
+						<button id = "partnersLearnMore">Learn More</button>
+					</div>
+					
+					<ul>
+						<li class = "partnersListCell">
+							<img src="./images/sfFoundations.png">
+						</li>
+
+						<li class = "partnersListCell">
+							<img src="./images/sfFoundations.png">
+						</li>
+
+						<li class = "partnersListCell">
+							<img src="./images/sfFoundations.png">
+						</li>
+						<li class = "partnersListCell">
+							<img src="./images/sfFoundations.png">
+						</li>
+						<li class = "partnersListCell">
+							<img src="./images/sfFoundations.png">
+						</li>
+						<li class = "partnersListCell">
+							<img src="./images/sfFoundations.png">
+						</li>
+						
+					</ul>
+
+					
+				</div>
+			</div>
+
+		</div> -->
+		
+
+		<footer id = "footerView">
+			<div id = "subscribeView">
+				<h3>SUBSCRIBE</h3>
+				<h4 id = "subscribeDescription">Sign up with your email address to recieve news and updates from us.</h4>
+				<input type="text" name="firstName" class = "signUpField" placeholder="First Name" id = "firstNameField">
+				<input type="text" name="lastName" class = "signUpField" placeholder="Last Name" id = "lastNameField">
+				<input type="email" name="email" class = "signUpField" placeholder="Email" id = "emailField">
+				<button id = "signUpButton" onclick="submitSubscribe();">SIGN UP</button>
+				<h5 id = "spamDescription">We promise we won't spam you.</h5>
+				<h2 id = "subscribedMessage">Thank you! You will hear from us soon!</h2>
+				<h2 id = "socialMediaTitle">Follow us on Social Media</h2>
+				<div id = "socialMediaDiv">
+					<a href="https://www.instagram.com/scee.ucsc/"><img src="./images/instagram.png" id = "instagram"></a>
+					<a href="https://www.facebook.com/UCSC-Entrepreneurship-Club-381648289049770/?modal=admin_todo_tour"><img src="./images/facebook.png" id = "facebook"></a>
+					<a href="https://www.linkedin.com/company/scee-student-creativity-and-entrepreneurial-empowerment"><img src="./images/linkedin.png" id = "linkedin"></a>
+				</div>
+			</div>
+			
+		</footer>
+
+	</div>
+
+</body>
+
+</html>

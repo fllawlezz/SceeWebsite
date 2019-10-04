@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./eventsPage/eventsCss.css">
+	<link href="https://fonts.googleapis.com/css?family=Laila|Montserrat:400,600,700,800|Dancing+Script:400,600,700,800" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SCEE - Events</title>
+	<link rel="icon" href="./images/tabPic.png">
+	<script src="./eventsPage/eventsFunctions.js"></script>
+</head>
+<body>
+	<div id = "container">
+		<div id = "navBar">
+			<a href="index.html"><img src="./images/clubLogo.png" id = "logo"></a>
+			<!-- <h1><a href="index.html" id = "title">SCEE</a></h1> -->
+			<ul id = "navItems">
+				<li><a href="index.html" id = "homeLink">Home</li>
+				<li><a href="./AboutPage">About</a></li>
+				<li><a href="./blog">Blog</a></li>
+				<li><a href="./contact">Contact</a></li>
+			</ul>
+			<input type="image" src = "./images/hamburger.png" id = "hamburgerButton" onclick = "handeMobileNav();">
+			<div id = "darkView">
+
+			</div>	
+			<div id = "slideInMenu">
+				<ul id = "mobileNavBar">
+					<li class = "mobileNavCell"><a href="index.html">Home</a></li>
+					<li class = "mobileNavCell"><a href="./AboutPage">About</a></li>
+					<li class = "mobileNavCell"><a href="./blog">Blog</a></li>
+					<li class = "mobileNavCell"><a href="./contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id = "mainView">
+			<img src="./images/eventsImages/event0.png" id = "eventImage">
+			<div id = "signUpFieldsDiv">
+				<h2 id = "signUpTitle">Sign Up for the LinkedIn event below</h2>
+				<h3 id = "signUpDescription"> Join us for our first LinkedIn workshop at Crown Writing Center on May 16th. Food will be provided!</h3>
+				<div class = "signUpDiv">
+					<label for="name" class = "labelDescription">Full Name<span class = "required">*</span></label>
+					<input class = "normalField" placeholder = "Required" type="text" name="name" id = "signUpNameField">
+				</div>
+				<div class = "signUpDiv"">
+					<label for="email" class = "labelDescription">Email<span class = "required">*</span></label>
+					<input class = "normalField" placeholder = "Required" type="text" name="email" id = "signUpEmailField">
+				</div>
+
+				<div class = "signUpDiv">
+					<label for="phone" class = "labelDescription">Phone</label>
+					<input class = "normalField" placeholder = "(Optional)" type="text" name="phone" id = "signUpPhoneField">
+				</div>
+				
+				<div id = "submitDiv">
+					<button id = "submitButton" onclick="submitSignUpRequest();">Sign Up</button>
+				</div>
+				
+
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

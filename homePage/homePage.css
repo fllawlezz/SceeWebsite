@@ -1,0 +1,1345 @@
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	position: relative;
+	background-color: black;
+}
+
+p{
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+}
+
+a:hover{
+	/*background-color: orange;*/
+	/*font-style: bold;*/
+	/*font-weight: 600;*/
+	/*color:#009900;*/
+	/*color: rgb(44,59,113);*/
+	color: #ffcc00	;
+
+}
+
+h1{
+	/*margin: 0px;*/
+	/*margin-top: 15px;*/
+	/*margin: 20px 0px 0px 15px;*/
+	/*padding-top: 15px;*/
+	/*background-color: yellow;*/
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600px;
+	width: 450px;
+	font-size: 30px;
+	float: left;
+	color: black;
+}
+
+#container{
+	min-height: 100%;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	padding-bottom: 0px;
+	background-color: white;
+	/*background-image: url('forrest.jpg');*/
+	/*background-size: cover;*/
+	/*height: 1000px;*/
+}
+/*--------------- navigationBar---------------*/
+
+#navBar{
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	height: 80px;
+	width: 100%;
+	/*background-color: #f2f2f2;*/
+	/*background-color: red;*/
+	/*background-color: rgb(242,242,242, 1);*/
+	/*background-color: #f2f2f2;*/
+	/*z-index: 3;*/
+	overflow: auto;
+	box-shadow: 2px 2px 5px #e6e6e6;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#navBar h1{
+	display: flex;
+}
+
+#logo{
+	display: flex;
+	height: 80px;
+	width: 80px;
+	margin-left: 70px;
+	margin-left: 20px;
+	/*float: left;*/
+	/*background-color: red;*/
+}
+
+#title{
+	margin: 0px;
+	margin-top: 20px;
+	margin-left: 0px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	/*background-color: blue;*/
+	padding: 0px;
+	font-size: 28px;
+	/*float: left;*/
+	/*align-items: center;*/
+}
+
+#title:hover{
+	color:black;
+}
+
+#navItems{
+	/*background-color: yellow;*/
+	/*width: 200px;*/
+	/*margin: 30px 50px 0px 0px;*/
+	margin-right: 40px;
+	padding: 0px;
+	/*width: 600px;*/
+	min-width: 425px;
+	/*width: 30%;/
+	/*display: inline;*/
+	list-style-type: none;
+	float: right;
+}
+
+li{
+	display: inline;
+	margin: 10px 15px 0px 15px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	/*font-size: 12px;*/
+	letter-spacing: 2px;
+	float: left;
+	width: 75px;
+	text-align: center;
+	color: black;
+	/*background-color: orange;*/
+	/*color: rgb(44,59,113);*/
+}
+
+#homeLink{
+	/*color: #009900;*/
+	/*color: rgb(44,59,113);*/
+	color: #ffcc00;
+}
+
+#loginButtonLi{
+	margin: 5px 15px 0px 15px;
+	padding: 0px;
+	width: 100px;
+	height: 30px;
+	/*background-color: red;*/
+}
+
+#loginButton{
+	margin: 0px;
+	/*margin-top: 5px;*/
+	padding: 0px;
+	background-color: #ffcc00;
+	width: 100%;
+	height: 30px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 12.5px;
+
+}
+
+#loginButton:focus{
+	outline: none;
+}
+/*---------- mobile navigation ----------*/
+#hamburgerButton{
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	display: none;
+}
+
+#hamburgerButton:focus{
+	outline: none;
+}
+
+#darkView{
+	position: absolute;
+	/*top: 150px;*/
+	top: 80px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+	z-index: 9;
+}
+
+#slideInMenu{
+	position: absolute;
+	width: 100%;
+	height: 0px;
+	top: 80px;
+	/*background-color: red;*/
+	text-align: center;
+	background-color: white;
+	z-index: 10;
+	overflow: hidden;
+	border-top: 1px solid #f2f2f2;
+}
+
+#mobileNavBar{
+	margin: 0px;
+	margin: auto;
+	margin-top: 20px;
+	width: 80%;
+	height: 100%;
+	text-align: center;
+	/*background-color: orange;*/
+}
+
+.mobileNavCell{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	/*background-color: blue;*/
+	margin: 0px;
+}
+
+/*-------------- main view ----------------*/
+
+#mainView{
+	position: relative;
+	width: 100%;
+	/*min-height: 1125px;*/
+	/*min-height: 2100px;*/
+	min-height: 1650px;
+	margin: 0px;
+	/*margin-top: -80px;*/
+	padding: 0px;
+	overflow: auto;
+	/*background-color: red;*/
+}
+
+
+/*------- Slogan and Buttons ------------*/
+
+#sloganAndButtons{
+	position: absolute;
+	/*width: 1100px;*/
+	width: 80%;
+	height: 220px;
+	/*background-color: red;*/
+	/*margin-left: 10%;
+	margin-right: 10%;*/
+	margin-top: 275px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#slogan{
+	padding: 10px 10px 10px 10px;
+
+	/*width: 80%;*/
+	/*width: 900px;*/
+	width: 80%;
+	height: 100px;
+	/*margin: 0px 100px 0px 100px;*/
+	margin: 0px 10% 0px 10%;
+	/*margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 10%;
+	margin-right: 10%;*/
+	/*margin: auto;*/
+	background-color: rgb(242,242,242, 0.4);
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 45px;
+}
+
+#ourTeam{
+	float: left;
+	width: 220px;
+	height: 60px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+
+	margin: 20px 0px 0px 10%;
+
+	border-radius: 150px;
+	border-width: 0px;
+	/*background-color: #daffb3;*/
+	background-color: #ffcc00;
+	/*transition: 0.3s;*/
+	
+	/*transition-duration: 0.3s;*/
+}
+
+
+#ourTeam:focus{
+	outline: none;
+}
+
+#ourTeam:hover{
+	-webkit-transition-duration: 0.3s; /* Safari */
+	transition-duration: 0.3s;
+	background-color: black;
+	color: white;
+	/*border-width: 4px;
+	border-color: white;*/
+}
+
+#ourWorkshops{
+	float: left;
+	width: 220px;
+	height: 60px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+
+	margin: 20px 0px 0px 25px;
+
+	border-radius: 150px;
+	border-width: 0px;
+	/*background-color: #daffb3;*/
+	background-color: #ffcc00;
+	/*transition: 0.3s;*/
+	
+	/*transition-duration: 0.3s;*/
+}
+
+#ourWorkshops:focus{
+	outline: none;
+}
+
+#ourWorkshops:hover{
+	-webkit-transition-duration: 0.3s; /* Safari */
+	transition-duration: 0.3s;
+	background-color: black;
+	color: white;
+	/*border-width: 4px;
+	border-color: white;*/
+}
+
+/*------- slider Area ----------*/
+#carouselContainer{
+	/*background-color: red;*/
+	/*height: 100%;*/
+	height: 500px;
+	/*width: 100%;*/
+	width: 1300px;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 10px;
+	border: solid 5px #ffcc00;
+}
+
+#carouselSlide{
+	display: flex;
+	width: 80%;
+	height: 500px;
+}
+
+/*#sliderTestImgSize{
+	background-color: orange;
+	height: 100%;
+	width: 1300px;
+	width: 80%;
+	margin: auto;
+}*/
+
+
+.slideShowImage{
+	object-fit: fill;
+	height: 100%;
+	width: 1300px;
+	/*margin: auto;*/
+}
+
+.slideShowImage:hover{
+	cursor: pointer;
+}
+
+#prevButtonDiv{
+	position: absolute;
+	/*background-color: orange;*/
+	width: 100px;
+	height: 500px;
+	margin: 0px;
+	margin-top: 10px;
+	padding: 0px;
+
+}
+
+#backButton{
+	/*position: absolute;*/
+	margin: 0px;
+	/*margin-top: 225px;*/
+	padding: 0px;
+	width: 50px;
+	height: 50px;
+	margin-top: 200px;
+	float:right;
+	/*background-image: url('../images/leftArrow.png');*/
+}
+
+#backButton:focus{
+	outline: none;
+}
+
+#nextButtonDiv{
+	position: absolute;
+	/*float: right;*/
+	/*background-color: orange;*/
+	width: 100px;
+	height: 500px;
+	margin: 0px;
+	padding: 0px;
+	/*float: right;*/
+	right: 0%;
+	top: 0%;
+	margin-top: 10px;
+
+}
+
+#nextButton{
+	/*position: absolute;*/
+	margin: 0px;
+	/*margin-top: 225	px;*/
+	padding: 0px;
+	width: 50px;
+	height: 50px;
+	/*float:right;*/
+	margin-top: 200px;
+}
+
+#nextButton:focus{
+	outline: none;
+}
+/*----------- newsArea ----------------*/
+
+#newsArea{
+	min-height: 700px;
+	width: 100%;
+	/*background-color: yellow;*/
+	overflow: hidden;
+}
+
+#newsAreaMainView{
+	height: 100%;
+	width: 1200px;
+	/*background-color: red;*/
+	margin: auto;
+	overflow: hidden;
+}
+
+#newsAreaMainView h1{
+	width: 100%;
+	text-align: center;
+	font-size: 35px;
+	margin-top: 50px;
+	/*background-color: purple;*/
+}
+
+#newsList{
+	/*margin-top: 50px;*/
+	margin-top: 100px;
+	width: 100%;
+	min-height: 550px;
+	overflow: visible;
+	/*background-color: green;*/
+}
+
+.newsCell{
+	/*margin-top: 20px;*/
+	margin: 0px;
+	margin-left: 2.5%;
+	/*margin-right: 2.5%;*/
+	margin-top: 50px;
+	width: 30%;
+	/*height: 200px;*/
+	height: 90%;
+	/*background-color: magenta;*/
+}
+
+.newsCell h3{
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	margin-top: 10px;
+	/*background-color: red;*/
+}
+
+.newsCell img{
+	width: 200px;
+	height: 200px;
+	margin-top: 10px;
+
+}
+
+.newsCell p{
+	width: 90%;
+	height: 45%;
+	margin: auto;
+	margin-top: 10px;
+	text-align: left;
+	font-size: 14px;
+	/*background-color: orange;*/
+}
+
+/*----------- divider -------------------*/
+#divider{
+	width: 500px;
+	height: 10px;
+	/*margin: auto;*/
+}
+
+/*----------- partnersArea -------------*/
+#partnersArea{
+	height: 600px;
+	width: 100%;
+	/*background-color: green;*/
+}
+
+#partnersMainView{
+	/*height: 600px;*/
+	/*width: 300px;*/
+	height: 100%;
+	width: 1200px;
+	background-color: white;
+	margin: auto;
+	overflow: hidden;
+}
+
+#partnersDescription{
+	height: 100%;
+	width: 50%;
+	float: left;
+	/*background-color: yellow;*/
+}
+
+#partnersMainView h2{
+	font-family: "Montserrat", sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	/*margin-left: 50px;*/
+	text-align: center;
+	margin-top: 150px;
+	width: 100%;
+	/*float: left;*/
+}
+
+#partnersMainView p{
+	/*position: absolute;*/
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	/*background-color: orange;*/
+	width: 400px;
+	/*margin: auto;*/
+	margin-top: 15px;
+	margin-left: 100px;
+	color: gray;
+}
+
+#partnersLearnMore{
+	margin-left: 100px;
+	margin-top: 15px;
+	width: 150px;
+	height: 50px;
+	font-family: "Montserrat",sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color:black;
+	background-color: white;
+	border-width: 2.5px;
+	border-color: #ffcc00;
+}
+
+#partnersLearnMore:focus{
+	outline: none;
+}
+
+#partnersLearnMore:hover{
+	-webkit-transition-duration: 0.3s; /* Safari */
+	transition-duration: 0.3s;
+	border-color: black;
+	background-color: black;
+	color: white;
+}
+
+/*------- partners list ----------*/
+
+#partnersMainView ul{
+	width: 50%;
+	height: 80%;
+	margin: 75px 0px 0px 0px;
+	/*background-color: red;*/
+	float: left;
+	overflow: hidden;
+}
+
+.partnersListCell{
+	margin: 0px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-bottom: 3.33%;
+	width: 45%;
+	/*height: 50px;*/
+	height: 30%;
+	/*background-color: blue;*/
+}
+
+.partnersListCell img{
+	margin-top: 40px;
+	width: 250px;
+	height: 50px;
+
+}
+
+/*---------- footer view -----------*/
+#footerView{
+	margin: 0px;
+	padding: 0px;
+	background: black;
+	/*background-color: #f2f2f2;*/
+	height: 375px;
+	width: 100%;
+	position: absolute;
+	bottom: 0%;
+	/*text-align: center;*/
+	margin-top: -150px;
+	/*clear: both;*/
+}
+
+/*------- subscribeView------------*/
+#subscribeView{
+	/*float: right;*/
+	/*position: absolute;*/
+	margin: auto;
+	margin-top: 25px;
+	height: 325px;
+	width: 700px;
+	background-color: black;
+	text-align: center;
+
+}
+
+#subscribeView h3{
+	/*margin-top: 40px;*/
+	/*margin-bottom: 10px;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color: white;
+	/*background-color: red;*/
+}
+
+#subscribeView h4{
+	/*margin-top: 40px;*/
+	/*margin-bottom: 10px;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	color: white;
+	/*background-color: red;*/
+}
+
+.signUpField{
+	/*margin: 10px;*/
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-left: 5px;
+	height: 30px;
+	width: 150px;
+}
+
+#subscribeView button{
+	margin-left: 5px;
+	width: 100px;
+	height: 35px;
+	background-color: #ffcc00;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+#subscribedMessage{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	margin-top: 15px;
+	color: white;
+	display: none;
+}
+
+#subscribeView button:focus{
+	outline: none;
+}
+
+#subscribeView h5{
+	/*margin-top: 40px;*/
+	/*margin-bottom: 10px;*/
+	/*padding-top: 10px;*/
+	padding-bottom: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	color: white;
+	/*background-color: red;*/
+}
+
+/*------------ socialMedia Div -------------*/
+#socialMediaTitle{
+	/*background-color: blue;*/
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: white;
+}
+
+#socialMediaDiv{
+	/*background-color: red;*/
+	height: 50px;
+	width: 200px;
+	margin: auto;
+
+}
+
+
+#instagram{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	padding: 0px;
+	margin-left: 15px;
+	margin-right: 10px;
+	/*margin: 25px 0px 25px 10px;*/
+	/*margin: auto;*/
+	float: left;
+	z-index: 1;
+}
+
+#facebook{
+	position: relative;
+	height: 45px;
+	width: 45px;
+	margin-top: 2.5px;
+	/*margin-right: 30px;*/
+	/*margin: 25px 0px 25px 10px;*/
+	/*margin:auto;*/
+	margin-right: 17px;
+	float: left;
+	z-index: 1;
+}
+
+#linkedin{
+	position: relative;
+	height: 45px;
+	width: 45px;
+	margin-top: 2.5px;
+	/*margin-right: 30px;*/
+	/*margin: 25px 0px 25px 10px;*/
+	/*margin:auto;*/
+	float: left;
+	z-index: 1;
+}
+
+/*--------- change screen sizes ------------*/
+@media(max-width: 1580px){
+	#carouselContainer{
+		/*background-color: red;*/
+		/*height: 100%;*/
+		height: 385px;
+		/*width: 100%;*/
+		width: 1000px;
+		margin: auto;
+		overflow: hidden;
+		margin-top: 10px;
+		border: solid 5px #ffcc00;
+	}
+
+	#carouselSlide{
+		display: flex;
+		width: 100%;
+		/*height: 385px;*/
+		height: 100%;
+	}
+
+	.slideShowImage{
+		object-fit: fill;
+		height: 100%;
+		width: 1000px;
+		/*margin: auto;*/
+	}
+
+	#nextButtonDiv{
+		height: 385px;
+		/*background-color: orange;*/
+	}
+
+	#nextButton{
+		margin-top: 167.5px;
+	}
+
+	#prevButtonDiv{
+		height: 385px;
+		/*background-color: orange;*/
+	}
+
+	#backButton{
+		margin-top: 167.5px;	
+	}
+}
+
+
+@media(max-width: 1250px){
+	#carouselContainer{
+		/*background-color: red;*/
+		/*height: 100%;*/
+		height: 308px;
+		/*width: 100%;*/
+		width: 800px;
+		margin: auto;
+		overflow: hidden;
+		margin-top: 10px;
+		border: solid 5px #ffcc00;
+	}
+
+	#carouselSlide{
+		display: flex;
+		width: 100%;
+		/*height: 385px;*/
+		height: 100%;
+	}
+
+	.slideShowImage{
+		object-fit: fill;
+		height: 100%;
+		width: 800px;
+		/*margin: auto;*/
+	}
+
+	#nextButtonDiv{
+		height: 308px;
+		/*background-color: orange;*/
+	}
+
+	#nextButton{
+		margin-top: 129px;
+	}
+
+	#prevButtonDiv{
+		height: 308px;
+		/*background-color: orange;*/
+	}
+
+	#backButton{
+		margin-top: 129px;	
+	}
+
+
+	/*-------------------- News List Resizing -------------*/
+	#newsAreaMainView{
+		width: 1000px;
+	}
+}
+
+
+@media(max-width: 1050px){
+	#carouselContainer{
+		/*background-color: red;*/
+		/*height: 100%;*/
+		height: 230px;
+		/*width: 100%;*/
+		width: 600px;
+		margin: auto;
+		overflow: hidden;
+		margin-top: 10px;
+		border: solid 5px #ffcc00;
+	}
+
+	#carouselSlide{
+		display: flex;
+		width: 100%;
+		/*height: 385px;*/
+		height: 100%;
+	}
+
+	.slideShowImage{
+		object-fit: fill;
+		height: 100%;
+		width: 600px;
+		/*margin: auto;*/
+	}
+
+	#nextButtonDiv{
+		height: 230px;
+		/*background-color: orange;*/
+	}
+
+	#nextButton{
+		margin-top: 95px;
+	}
+
+	#prevButtonDiv{
+		height: 230px;
+		/*background-color: orange;*/
+	}
+
+	#backButton{
+		margin-top: 95px;	
+	}
+
+	/*-------------------- News List Resizing -------------*/
+	#newsAreaMainView{
+		width: 700px;
+	}
+
+	#newsList{
+		/*background-color: red;*/
+		height: 1650px;
+	}
+
+	.newsCell{
+		float:left;
+		width: 90%;
+		margin: 0px;
+		margin-left: 5%;
+		margin-top: 10px;
+		height: 400px;
+	}
+
+}
+
+@media(max-width: 830px){
+	#carouselContainer{
+		/*background-color: red;*/
+		/*height: 100%;*/
+		height: 192px;
+		/*width: 100%;*/
+		width: 500px;
+		margin: auto;
+		overflow: hidden;
+		margin-top: 10px;
+		border: solid 5px #ffcc00;
+	}
+
+	#carouselSlide{
+		display: flex;
+		width: 100%;
+		/*height: 385px;*/
+		height: 100%;
+	}
+
+	.slideShowImage{
+		object-fit: fill;
+		height: 100%;
+		width: 500px;
+		/*margin: auto;*/
+	}
+
+	#nextButtonDiv{
+		height: 192px;
+		width: 50px;
+		margin-right: 25px;
+		/*background-color: orange;*/
+	}
+
+	#nextButton{
+		margin-top: 71px;
+	}
+
+	#prevButtonDiv{
+		height: 192px;
+		width: 50px;
+		margin-left: 25px;
+		/*background-color: orange;*/
+	}
+
+	#backButton{
+		margin-top: 71px;	
+	}
+}
+
+@media(max-width: 700px){/*mobile phones*/
+	#footerView{
+		height: 450px;
+	}
+
+	#subscribeView{
+		width: 500px;
+		height: 400px;
+		/*background-color: red;*/
+	}
+
+	.signUpField{
+		width: 100px;
+	}
+}
+
+@media(max-width: 675px){
+	#carouselContainer{
+		/*background-color: red;*/
+		/*height: 100%;*/
+		height: 154px;
+		/*width: 100%;*/
+		width: 400px;
+		margin: auto;
+		overflow: hidden;
+		margin-top: 10px;
+		border: solid 5px #ffcc00;
+	}
+
+	#carouselSlide{
+		display: flex;
+		width: 100%;
+		/*height: 385px;*/
+		height: 100%;
+	}
+
+	.slideShowImage{
+		object-fit: fill;
+		height: 100%;
+		width: 400px;
+		/*margin: auto;*/
+	}
+
+	#nextButtonDiv{
+		height: 154px;
+		width: 50px;
+		/*background-color: orange;*/
+	}
+
+	#nextButton{
+		margin-top: 52px;
+	}
+
+	#prevButtonDiv{
+		height: 154px;
+		width: 50px;
+		/*background-color: orange;*/
+	}
+
+	#backButton{
+		margin-top: 52px;	
+	}
+
+	/*-------------------- News List Resizing -------------*/
+	#newsAreaMainView{
+		width: 500px;
+	}
+
+	#newsList{
+		/*background-color: red;*/
+		height: 1750px;
+	}
+
+	.newsCell{
+		float:left;
+		width: 90%;
+		margin: 0px;
+		margin-left: 5%;
+		margin-top: 10px;
+		height: 400px;
+	}
+
+	/*-------- hamburger show -----------*/
+	#navItems{
+		display: none;
+	}
+
+	#hamburgerButton{
+		display: block;
+	}
+
+}
+
+@media(max-width: 565px){
+	#carouselContainer{
+		/*background-color: red;*/
+		/*height: 100%;*/
+		height: 154px;
+		/*width: 100%;*/
+		width: 400px;
+		margin: auto;
+		overflow: hidden;
+		margin-top: 10px;
+		border: solid 5px #ffcc00;
+	}
+
+	#carouselSlide{
+		display: flex;
+		width: 100%;
+		/*height: 385px;*/
+		height: 100%;
+	}
+
+	.slideShowImage{
+		object-fit: fill;
+		height: 100%;
+		width: 400px;
+		/*margin: auto;*/
+	}
+
+	#nextButtonDiv{
+		height: 154px;
+		width: 40px;
+		margin-right: 0px;
+		/*background-color: orange;*/
+	}
+
+	#nextButton{
+		margin-top: 52px;
+		width: 40px;
+		height: 40px;
+	}
+
+	#prevButtonDiv{
+		height: 154px;
+		width: 40px;
+		margin-left: 0px;
+		/*background-color: orange;*/
+	}
+
+	#backButton{
+		margin-top: 52px;	
+		width: 40px;
+		height: 40px;
+	}
+
+	/*-------- footer resize ----------*/
+	#mainView{
+		min-height: 2100px;
+	}
+
+	#footerView{
+		height: 550px;
+	}
+
+	#subscribeView{
+		width: 300px;
+		height: 500px;
+		/*background-color: red;*/
+	}
+
+	.signUpField{
+		width: 180px;
+		/*margin-right: 20px;*/
+	}
+
+	#signUpButton{
+		margin-bottom: 20px;
+	}
+
+
+}
+
+@media(max-width: 500px){
+	/*-------------------- News List Resizing -------------*/
+	#newsAreaMainView{
+		width: 300px;
+	}
+
+	#newsList{
+		/*background-color: red;*/
+		height: 2200px;
+	}
+
+	.newsCell{
+		float:left;
+		width: 90%;
+		margin: 0px;
+		margin-left: 5%;
+		margin-top: 10px;
+		height: 500px;
+	}
+}
+
+@media(max-width: 480px){
+	#carouselContainer{
+		/*background-color: red;*/
+		/*height: 100%;*/
+		height: 160px;
+		/*width: 100%;*/
+		width: 414px;
+		margin: auto;
+		overflow: hidden;
+		margin-top: 10px;
+		border: none;
+	}
+
+	#carouselSlide{
+		display: flex;
+		width: 100%;
+		/*height: 385px;*/
+		height: 100%;
+	}
+
+	.slideShowImage{
+		object-fit: fill;
+		height: 100%;
+		width: 414px;
+		/*margin: auto;*/
+	}
+
+
+	#nextButtonDiv{
+		height: 160px;
+		margin-top: 10px;
+		background-color: rgba(0,0,0,0.3);
+	}
+
+	#nextButton{
+		margin-top: 60px;
+	}
+
+	#prevButtonDiv{
+		height: 160px;
+		margin-top: 10px;
+		background-color: rgba(0,0,0,0.3);
+	}
+
+	#backButton{
+		margin-top: 60px;
+	}
+}
+
+@media(max-width: 475px){
+	#nextButtonDiv{
+		margin-right: 0px;
+		z-index: 2;
+	}
+
+	#prevButtonDiv{
+		margin-left: 0px;
+		z-index: 2;
+	}
+
+/*	.mobileNavCell a{
+		padding-right: 20px;
+	}*/
+}
+
+@media(max-width: 413px){
+	#carouselContainer{
+		/*background-color: red;*/
+		/*height: 100%;*/
+		height: 123px;
+		/*width: 100%;*/
+		width: 320px;
+		margin: auto;
+		overflow: hidden;
+		margin-top: 10px;
+		border: none;
+	}
+
+	#carouselSlide{
+		display: flex;
+		width: 100%;
+		/*height: 385px;*/
+		height: 100%;
+	}
+
+	.slideShowImage{
+		object-fit: fill;
+		height: 100%;
+		width: 320px;
+		/*margin: auto;*/
+	}
+
+	#nextButtonDiv{
+		height: 123px;
+	}
+
+	#nextButton{
+		margin-top: 41.5px;
+	}
+
+	#prevButtonDiv{
+		height: 123px;
+	}
+
+	#backButton{
+		margin-top: 41.5px;
+	}
+}
+
+
+
+@media(max-width: 350px){
+	#nextButtonDiv{
+		margin-top: 10px;
+		background-color: rgba(0,0,0,0.3);
+	}
+
+	#prevButtonDiv{
+		margin-top: 10px;
+		background-color: rgba(0,0,0,0.3);
+	}
+
+	#carouselContainer{
+		border: none;
+	}
+
+	/*-------------------- News List Resizing -------------*/
+	#newsAreaMainView{
+		width: 300px;
+	}
+
+	#newsList{
+		/*background-color: red;*/
+		height: 2100px;
+	}
+
+	.newsCell{
+		float:left;
+		width: 90%;
+		margin: 0px;
+		margin-left: 5%;
+		margin-top: 10px;
+		height: 500px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

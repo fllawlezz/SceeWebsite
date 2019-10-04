@@ -1,0 +1,312 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	position: relative;
+	background-color: black;
+}
+
+#container{
+	overflow: auto;
+}
+
+/*-------- nav bar ------------*/
+#navBar{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 70px;
+	/*background-color: red;*/
+	z-index: 3;
+}
+
+#logo{
+	display: flex;
+	height: 80px;
+	width: 80px;
+	margin-left: 70px;
+	margin-left: 20px;
+	/*float: left;*/
+	/*background-color: red;*/
+}
+
+/*-------- main view -----------*/
+#mainView{
+	width: 100%;
+	min-height: 650px;
+	background-color: orange;
+}
+
+#raisingHands{
+	/*width: 500px;*/
+	margin-top: 70px;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+
+#pageTitle{
+	width: 100%;
+	height: 70px;
+	top: 200px;
+	color: #ffcc00;
+	margin-top: 20px;
+	text-align: center;
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+/*------ application div --------*/
+#applicationDiv{
+	width: 850px;
+	min-height: 800px;
+	/*background-color: #f2f2f2;*/
+	margin: auto;
+	margin-bottom: 300px;
+
+	/*border-color: white;*/
+	/*border: 1px solid white;*/
+}
+
+.sectionTitle{
+	color: #ffcc00;	
+	/*background-color: red;*/
+	padding-top: 15px;
+	padding-left: 25px;
+	margin-bottom: 20px;
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+
+}
+/*--------- teamMemberes ---------*/
+
+#teamMembersList{
+	min-height: 200px;
+	width: 300px;
+	/*background-color: red;	*/
+}
+
+.teamMembers{
+	color:white;
+	list-style-type: none;
+	height: 50px;
+	width: 250px;
+	background-color: white;
+	margin: 10px 10px 10px 20px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.teamMemberName{
+	height: 35px;
+	width: 170px;
+	padding-top: 15px;
+	/*background-color: orange;*/
+	float: left;
+	padding-left: 15px;
+	color: black;
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.redMinus{
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+#addTeamMemberButton{
+	background-color: white;
+	width: 250px;
+	height: 50px;
+	margin-left: 20px;
+	border-radius: 10px;
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+#addTeamMemberTitle{
+	color:black;
+	height: 35px;
+	width: 170px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	float: left;
+
+	padding-top: 15px;
+	padding-left: 15px;	
+	overflow: hidden;
+}
+
+#greenPlus{
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.normalInput{
+	width: 350px;
+	height: 35px;
+	margin-left: 15px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.normalInput:focus{
+	outline: none;
+}
+
+.chooseFileButton{
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.chooseFileButton{
+	outline: none;
+}
+
+#pitchTitle{
+	height: 30px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color:white;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	/*background-color: red;*/
+}
+
+.chooseFileButton{
+	width: 100%;
+	height: 50px;
+	margin-left: 25px;
+	color: white;
+
+	/*background-color: red;*/
+}
+
+#submitDiv{
+	height: 60px;
+	width: 350px;
+	margin: auto;
+	/*background-color: red;*/
+	margin-top: 30px;
+}
+
+#submitButton{
+	width: 350px;
+	height: 60px;
+	background-color: #ffcc00;
+	border-width: 0px;
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+#submitButton:focus{
+	outline: none;
+}
+
+/*---------- add member ----------*/
+#addMemberDiv{
+	top: 0;
+	display: none;
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	background-color: rgba(0,0,0,0.3);
+}
+
+#addMemberBackground{
+	width: 500px;
+	height: 150px;
+	background-color: white;
+	margin: auto;
+	margin-top: 300px;
+	border-radius: 5px;
+}
+
+#newMemberNameField{
+	margin-left: 65px;
+	margin-top: 25px;
+}
+
+#addMemberButtons{
+	width: 350px;
+	height: 40px;
+	margin: auto;
+	/*background-color: red;*/
+}
+
+#newMemberCancel{
+	width: 150px;
+	height: 40px;
+	background-color: #e60000;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+
+	margin-left: 22px;
+	border-width: 0px;
+
+	border-radius: 5px;
+}
+
+#newMemberCancel:focus{
+	outline: none;
+}
+
+#newMemberAdd{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color:white;
+	/*color: #ffcc00;*/
+
+	width: 150px;
+	height: 40px;
+	background-color: #00cc00;
+	border-width: 0px;
+	border-radius: 5px;
+}
+
+#newMemberAdd:focus{
+	outline: none;
+}
+
+
+
+
+
+
+
+
+

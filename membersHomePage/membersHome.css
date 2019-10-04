@@ -1,0 +1,186 @@
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	position: relative;
+	background-color: black;
+}
+
+#container{
+	min-height: 100%;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	padding-bottom: 0px;
+	background-color: white;
+}
+
+/*--------------- navigationBar---------------*/
+
+#navBar{
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	height: 80px;
+	width: 100%;
+	overflow: auto;
+	box-shadow: 2px 2px 5px #e6e6e6;
+	align-items: center;
+	justify-content: space-between;
+	/*background-color: red;*/
+}
+
+#logo{
+	display: flex;
+	height: 80px;
+	width: 80px;
+	margin-left: 70px;
+	margin-left: 20px;
+	/*float: left;*/
+	/*background-color: red;*/
+}
+
+/*----------- main Body ---------------*/
+#mainBody{
+	position: relative;
+	width: 100%;
+	min-height: 1650px;
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
+}
+
+/*--------- Elements -------------*/
+#memberName{
+	margin: 0px 25px 0px 0px;
+
+	padding: 0px;
+	/*background-color: red;*/
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	max-width: 500px;
+}
+
+/*------- pageNavBlock ----------*/
+#pageNavBlock{
+	margin: 20px 0px 0px 50px;
+	width: 300px;
+	height: 500px;
+	background-color: orange;
+	float: left;
+}
+
+/*------- contentBlock ----------*/
+#contentBlock{
+	margin: 0px;
+	padding: 0px;
+	margin: auto;
+	margin-top: 20px;
+	width: 800px;
+	height: 800px;
+	overflow: auto;
+
+}
+
+#createBlogPost{
+	height: 200px;
+	width: 500px;
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+	margin: auto;
+	border: 1.5px solid #f2f2f2;
+	border-radius: 5px;
+}
+
+#creatBlogPostTitle{
+	height: 25px;
+	margin: 0px;
+	padding: 10px 0px 0px 20px;
+	background-color: #f2f2f2;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+
+}
+
+#profilePic{
+	margin: 15px 10px 0px 10px;
+	padding: 0px;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	float: left;
+}
+
+#textArea{
+	margin: 15px 0px 0px 10px;
+	padding: 0px;
+	padding-top: 15px;
+	width: 400px;
+	height: 35px;
+	resize: none;
+	float: left;
+	font-size: 20px;
+	border: 0px;
+}
+
+#textArea:focus{
+	outline: none;
+}
+
+.separatorLine{
+	position: relative;
+	margin: 0px;
+	margin-top: 100px;
+	padding: 0px;
+	height: 2px;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+#uploadImageButton{
+
+	margin-top: 10px;
+	margin-left: 10px;
+
+	background-color: #f2f2f2;
+	height: 40px;
+	width: 155px;
+	overflow: hidden;
+	border-radius: 20px;
+}
+ #imagesIcon{
+ 	margin: 0px;
+ 	margin-left: 5px;
+ 	padding: 0px;
+ 	/*background-color: green;*/
+ 	height: 40px;
+ 	width: 40px;
+ 	float: left;
+ }
+
+#uploadImageButtonTitle{
+	/*background-color: green;*/
+	margin-left: -5px;
+	padding-top: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	float: left;
+	color: gray;
+}
+
+
+
+
+
+
+

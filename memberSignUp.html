@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SCEE - New Member</title>
+	<link href="https://fonts.googleapis.com/css?family=Laila|Montserrat:100,200,300,400,500,600,700,800|Work+Sans:400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./newMemberSignUp/newMemberSignUp.css">
+	<script src = "./newMemberSignUp/newMemberSignUpFunctions.js"></script>
+	<link rel="icon" href="./images/tabPic.png">
+</head>
+<body>
+	<div id = "container">
+		<div id = "navBar">
+			<!-- <h1><a href="index.html" id = "title">SCEE</a></h1> -->
+			<a href="index"><img src="./images/clubLogo.png" id = "logo"></a>
+			<ul id = "navItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="AboutPage.html">About</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+
+	<div id = "mainView">
+		<h1 id = "memberSignUpTitle">Team Sign Up</h1>
+		<input class = "normalField" placeholder = "Your First and Last Name" type="text" name="name">
+		<input class = "normalField" placeholder = "Your email" type="email" name="email">
+		<input class = "normalField" placeholder = "Your Position"  name="position">
+		<textarea id = "textArea" placeholder="Your description (about 100-160 words)" rows="4" cols="50"></textarea>
+
+		<h3 id = "wordCount">0/160</h3>
+
+		<button id = "submitButton" onclick="submitSignUp();">Submit</button>
+	</div>
+
+		<footer id = "footerView">
+			<div id = "subscribeView">
+				<h3>SUBSCRIBE</h3>
+				<h4>Sign up with your email address to recieve news and updates from us.</h4>
+				<input type="text" name="firstName" class = "signUpField" placeholder="First Name">
+				<input type="text" name="lastName" class = "signUpField" placeholder="Last Name">
+				<input type="email" name="email" class = "signUpField" placeholder="Email">
+				<button>SIGN UP</button>
+				<h5>We promise we won't spam you.</h5>
+
+				<h2 id = "socialMediaTitle">Follow us on Social Media</h2>
+				<div id = "socialMediaDiv">
+					<a href="https://www.instagram.com/scee.ucsc/"><img src="./images/instagram.png" id = "instagram"></a>
+					<a href="https://www.facebook.com/UCSC-Entrepreneurship-Club-381648289049770/?modal=admin_todo_tour"><img src="./images/facebook.png" id = "facebook"></a>
+					<a href="https://www.linkedin.com/company/scee-student-creativity-and-entrepreneurial-empowerment"><img src="./images/linkedin.png" id = "linkedin"></a>
+				</div>
+			</div>
+			
+		</footer>
+	</div>
+</body>
+</html>

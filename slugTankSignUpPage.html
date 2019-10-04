@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finish Signing Up</title>
+	<link rel="stylesheet" type="text/css" href="./slugTankFiles/slugTankSignUpPage.css">
+	<link href="https://fonts.googleapis.com/css?family=Laila|Montserrat:400,600,700,800" rel="stylesheet">
+	<script src="./slugTankFiles/slugTankSignUpPageFunctions.js"></script>
+</head>
+<body>
+	<div id = "container">
+		<div id = "navBar">
+			<a href="index.html"><img src="./images/sceeYellow.png" id = "logo"></a>
+		</div>
+
+		<div id = "main">
+			<img id = "raisingHands" src="./images/slugTankImages/raisingHandsBlurred.png">
+			<h2 id = "pageTitle">So you want to sign up for Slug Tank? We need some <br>more info first.</h2>
+
+			<div id = "applicationDiv">
+				<h2 class = "sectionTitle">Team Members</h2>
+				<ul id = "teamMembersList">
+
+					<li id = "addTeamMemberButton" onclick="handleAddTeamMember();">
+						<h2 id = "addTeamMemberTitle">Add Team Member</h2> 
+						<img src="./images/greenPlus.png" id ="greenPlus">
+					</li>
+
+
+				</ul>
+				<h2 class = "sectionTitle">Project Information</h2>
+				<input class = "normalInput" type="text" name="projectName" placeholder="Project Name" id = "projectNameField">
+				<input class = "normalInput" type="text" name="project Description" placeholder="Project Description" id = "projectDescriptionField">
+				<input class = "normalInput" type="text" name="email" placeholder="Email" id = "emailField">
+
+				<!-- <h2 class = "sectionTitle">Media Files</h2>
+				<h5 id = "pitchTitle">We need your 1-2 minute video pitching your idea.</h5>
+				<input type="file" name="video" class = "chooseFileButton" id = "videoFileButton"/>
+				<h5 id = "pitchTitle">We also need a 4-5 slide presentation example. (You are not locked into using these slides)</h5>
+				<input type="file" name="presentation" class = "chooseFileButton" id = "presentationFileButton"/> -->
+				<div id = "submitDiv"><button id = "submitButton" onclick="submitForm();">Submit</button></div>
+				
+			</div>
+		</div>
+
+		<div id = "addMemberDiv">
+			<div id = "addMemberBackground">
+				<input type="text" class = "normalInput" name="newMemberField" placeholder="New Member Name" id = "newMemberNameField">
+				<div id = "addMemberButtons">
+					<button id = "newMemberCancel" onclick = "handleCancelAddMember();">Cancel</button>
+					<button id = "newMemberAdd" onclick = "appendTeamMember();">Add</button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
