@@ -360,7 +360,7 @@ li{
   	transition: opacity 0.6s ease-in-out;
 }
 
-.slideShowImage:hover{
+.slideshowImage:hover{
 	cursor: pointer;
 }
 
