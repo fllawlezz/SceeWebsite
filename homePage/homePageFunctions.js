@@ -1,60 +1,50 @@
 var counter = 0;
-var carouselImagesSizeWidth;
+var slideIndex = 0;
 var mobileNavOpen = false;
+var timeout;
 
 window.onload = function(){
 	console.log('translated');
 	
-	carouselSetup();
+	carousel();
 	setWhiteArrows();
 }
 
 window.onresize = function(){
 	// console.log("resize");
-	carouselSetup();
+	carousel();
 	setWhiteArrows();
 }
 
-function carouselSetup(){
-	const carouselSlide = document.getElementById("carouselSlide");
-	// const carouselImageSizeWidth = 1000;
-	const carouselContainer = document.getElementById("carouselContainer");
-	carouselImageSizeWidth = carouselContainer.clientWidth;
-	// console.log(carouselImageSizeWidth);
-
-	carouselSlide.style.transition = "none";
-	carouselSlide.style.transform = "translateX(-"+(carouselImageSizeWidth * counter)+"px)";
-
-
-
-	const nextButton = document.getElementById("nextButton");
-	nextButton.removeEventListener("click", nextButtonFunction);	
-	nextButton.addEventListener("click", nextButtonFunction);
-
-	const backButton = document.getElementById("backButton");
-	backButton.removeEventListener("click", prevButtonFunction);
-	backButton.addEventListener("click", prevButtonFunction);
+// Slideshow
+function plusDivs(n) {
+	clearTimeout(timeout);
+	var x = document.getElementsByClassName("slideshowImage");
+	for (i = 0; i < x.length; i++) {
+	  x[i].style.opacity = 0;
+	}
+  
+	slideIndex+= n;
+	if (slideIndex > x.length) {slideIndex = 1}
+	if (slideIndex < 1) {slideIndex = 3}
+	x[slideIndex-1].style.display = "block"; 
+	x[slideIndex-1].style.opacity = 1; 
+    timeout = setTimeout(carousel, 4000);
 }
 
-function nextButtonFunction(){
-	if(counter < 2){
-		carouselSlide.style.transition = 'transform 0.4s ease-in-out';
-		counter++;
-		console.log(counter);
-		console.log("translateX(-"+(carouselImageSizeWidth * counter)+"px)");
-		carouselSlide.style.transform = "translateX(-"+(carouselImageSizeWidth * counter)+"px)";
-	}
-}
+function carousel() {
+  clearTimeout(timeout);
+  var i;
+  var x = document.getElementsByClassName("slideshowImage");
+  for (i = 0; i < x.length; i++) {
+	x[i].style.opacity = 0;
+  }
 
-function prevButtonFunction(){
-	if(counter > 0){
-		carouselSlide.style.transition = 'transform 0.4s ease-in-out';
-		counter--;
-		console.log(counter);
-		console.log("translateX(-"+(carouselImageSizeWidth * counter)+"px)");
-		carouselSlide.style.transform = "translateX(-"+(carouselImageSizeWidth*counter)+"px)";
-		// carouselSlide.style.transform = "translateX(0px)";
-	}
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block"; 
+  x[slideIndex-1].style.opacity = 1; 
+  timeout = setTimeout(carousel, 4000);
 }
 
 function setWhiteArrows(){
@@ -69,8 +59,6 @@ function setWhiteArrows(){
 		nextArrow.src = "./images/rightArrow.png";
 	}
 }
-
-
 
 function handleLearnMorePressed(){
 	sessionStorage.setItem('learnMore','1');

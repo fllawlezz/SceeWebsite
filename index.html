@@ -37,52 +37,17 @@
 			</div>
 		</div>
 
-		<div id = "mainView"> 
-
-			<div id = "prevButtonDiv">
-					<!-- <button id = "backButton"></button> -->
-					<input type="image" src="./images/leftArrow.png" id = "backButton">
-			</div>
+		<div id = "mainView">
 			<div id = "carouselContainer">
-
-				<div id = "carouselSlide">
-					<img src="./images/slideShowImages/slideShowImage0.png" class = "slideShowImage">
-					<img src="./images/slideShowImages/slideShowImage1.png" class = "slideShowImage" onclick = "handleToEvents();">
-					<img src="./images/slideShowImages/slideShowImage2.png" class = "slideShowImage" onclick = "handleToSignUp();">
+				<button onclick="plusDivs(-1)">&#10094;</button>
+				<div id="carouselSlideContainer">
+					<img src="./images/slideShowImages/slideShowImage0.png" class = "slideshowImage">
+					<img src="./images/slideShowImages/Slider_SlugtankPlaceholder.png" class = "slideshowImage" onclick = "handleToSignUp();">
+					<img src="./images/slideShowImages/Slider_BigIdeas.jpg" class = "slideshowImage" onclick = "handleToBigIdeas();">
 				</div>
-
-				<!-- <div class = "fadingSlide">
-					<img src="./images/slideShowImages/slideShowImage1.png" class = "slideShowImage">
-				</div> -->
-
-				
-				
-
-<!-- 				<div class = "fadingSlide">
-					<img src="./images/slideShowImages/slideShowImage2.png" class = "slideShowImage">
-				</div> -->
-
-
-<!-- 				<div id = "sliderTestImgSize">
-					
-				</div> -->
-				
+				<button class="right" onclick="plusDivs(+1)">&#10095;</button>
 			</div>
-
-			<div id = "nextButtonDiv">
-					<input type="image" src="./images/rightArrow.png" id = "nextButton">
-				</div>
-
-			<!-- main view needs to have a slider that can slide -->
-
-
-			<!-- <div id = "sloganAndButtons">
-				<h1 id = "slogan">SCEE. Empowering UCSC students to follow their dreams. </h1>
-				<button id = "ourTeam" onclick="handleLearnMorePressed();">Our Team</button>
-				<button id = "ourWorkshops" onclick="handleWorkShopsPressed();">Our Workshops</button>
-			</div> -->
-
-
+			
 			<div id = "newsArea">
 				<div id = "newsAreaMainView">
 					<h1>News</h1>
