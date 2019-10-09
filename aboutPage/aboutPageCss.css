@@ -1,1026 +1,999 @@
-*{
-	margin: 0px;
-	padding: 0px;
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-	margin: 0px;
-	padding: 0px;
-	height: 100%;
-	position: relative;
-	background-color: black;
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
 }
 
-p{
-	margin: 0px;
-	padding: 0px;
+p {
+  margin: 0;
+  padding: 0;
 }
 
-a{
-	text-decoration: none;
-	color: black;
-	font-size: 15px;
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
 }
 
-a:hover{
-	/*background-color: orange;*/
-	/*font-style: bold;*/
-	/*font-weight: 600;*/
-	color:#ffcc00;
-
+a:hover {
+  /*background-color: orange;*/
+  /*font-style: bold;*/
+  /*font-weight: 600;*/
+  color: #ffcc00;
 }
 
-h1{
-	/*margin: 0px;*/
-	/*margin-top: 15px;*/
-	/*margin: 20px 0px 0px 15px;*/
-	/*padding-top: 15px;*/
-	/*background-color: yellow;*/
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600px;
-	width: 450px;
-	font-size: 30px;
-	float: left;
-	color: black;
+h1 {
+  width: 450px;
+  float: left;
+  color: black;
+  font-weight: 600px;
+  font-size: 30px;
+  /*margin: 0px;*/
+  /*margin-top: 15px;*/
+  /*margin: 20px 0px 0px 15px;*/
+  /*padding-top: 15px;*/
+  /*background-color: yellow;*/
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*---------- newsLetterDiv*/
-#profileDiv{
-	position: absolute;
-	/*height: 100%;*/
-	/*height: 500px;*/
-	/*height: 100%;*/
-	margin: 0px;
-	padding: 0px;
-	/*height: 1000px;*/
-	height: 100%;
-	width: 100%;
-	z-index: 10;
-	background-color: rgba(0,0,0,0.5);
-	display: none;	
-	/*align-items: center;*/
-	/*background-color: black;*/
-
+#profileDiv {
+  position: absolute;
+  display: none;
+  /*height: 100%;*/
+  /*height: 500px;*/
+  /*height: 100%;*/
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /*height: 1000px;*/
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*align-items: center;*/
+  /*background-color: black;*/
 }
 
-#profileView{
-	margin: auto;
-	margin-top: 100px;
-	width: 400px;
-	height: 600px;
-	background-color: white;
-	overflow: auto;
-	/*overflow: scroll;*/
-	/*text-align: center;*/
+#profileView {
+  margin: auto;
+  margin-top: 100px;
+  width: 400px;
+  height: 600px;
+  overflow: auto;
+  background-color: white;
+  /*overflow: scroll;*/
+  /*text-align: center;*/
 }
 
-#blackClear{
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	text-align: left;
+#blackClear {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  text-align: left;
 }
 
-#profileImage{
-	margin-top: 30px;
-	width: 250px;
-	height: 250px;
-	margin-left: 75px;
+#profileImage {
+  margin-top: 30px;
+  margin-left: 75px;
+  width: 250px;
+  height: 250px;
 }
 
-#profileName{
-	margin-top: 25px;
-	text-align: center;
-	font-family: "Montserrat", sans-serif;
-	font-size: 22px;
-	font-weight: 600;
+#profileName {
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#profileDescriptionDiv{
+/* #profileDescriptionDiv{
 	margin: auto;
 	width: 380px;
 	height: 250px;
-	/*background-color: red;*/
+	background-color: red;
 	overflow: scroll;
-}
+} */
 
-#profileView p{
-	margin-bottom: 10px;
-	padding: 10px;
-
-	font-family: "Montserrat", sans-serif;
-	font-size: 15px;
-	font-weight: 400;
-
+#profileView p {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*------- container ---------*/
 
-
-
-#container{
-	min-height: 100%;
-	overflow: hidden;
-	display: block;
-	position: relative;
-	padding-bottom: 100px;
-	/*background-color: orange;*/
-	background-color: white;
-	width: 100%;
-	/*background-image: url('forrest.jpg');*/
-	/*background-size: cover;*/
-	/*height: 1000px;*/
+#container {
+  position: relative;
+  display: block;
+  padding-bottom: 100px;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  /*background-color: orange;*/
+  background-color: white;
+  /*background-image: url('forrest.jpg');*/
+  /*background-size: cover;*/
+  /*height: 1000px;*/
 }
 /*--------------- navigationBar---------------*/
 
-#navBar{
-	display: flex;
-	margin: 0px;
-	padding: 0px;
-	height: 80px;
-	width: 100%;
-	/*background-color: #f2f2f2;*/
-	/*background-color: red;*/
-	overflow: auto;
-	box-shadow: 2px 2px 5px #e6e6e6;
-	align-items: center;
-	justify-content: space-between;
+#navBar {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80px;
+  /*background-color: #f2f2f2;*/
+  /*background-color: red;*/
+  overflow: auto;
+  box-shadow: 2px 2px 5px #e6e6e6;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#logo{
-	display: flex;
-	height: 80px;
-	width: 80px;
-	margin-left: 20px;
-	/*float: left;*/
-	/*background-color: red;*/
+#logo {
+  display: flex;
+  margin-left: 20px;
+  width: 80px;
+  height: 80px;
+  /*float: left;*/
+  /*background-color: red;*/
 }
 
-#title{
-	margin: 0px;
-	margin-left: 35px;
-	font-weight: 800;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	/*background-color: red;*/
-	padding: 0px;
-	font-size: 28px;
+#title {
+  margin: 0;
+  margin-left: 35px;
+  /*background-color: red;*/
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 28px;
 }
 
-#title:hover{
-	color:black;
+#title:hover {
+  color: black;
 }
 
-#navItems{
-	/*background-color: yellow;*/
-	/*width: 200px;*/
-	/*margin: 30px 50px 0px 0px;*/
-	margin-right: 40px;
-	padding: 0px;
-	/*width: 600px;*/
-	min-width: 425px;
-	/*width: 30%;/
+#navItems {
+  /*background-color: yellow;*/
+  /*width: 200px;*/
+  /*margin: 30px 50px 0px 0px;*/
+  margin-right: 40px;
+  padding: 0;
+  /*width: 600px;*/
+  min-width: 425px;
+  float: right;
+  /*width: 30%;/
 	/*display: inline;*/
-	list-style-type: none;
-	float: right;
+  list-style-type: none;
 }
 
-li{
-	display: inline;
-	margin: 0px 15px 0px 15px;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 600;
-	letter-spacing: 2px;
-	float: left;
-	width: 75px;
-	text-align: center;
-	color: black;
+#navItems li {
+  display: inline;
+  margin: 0 15px 0 15px;
+  width: 75px;
+  float: left;
+  color: black;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#aboutItem{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	color:#ffcc00;
-	/*font-style: bold;*/
+#aboutItem {
+  color: #ffcc00;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  /*font-style: bold;*/
 }
 
 /*---------- mobile navigation ----------*/
-#hamburgerButton{
-	width: 35px;
-	height: 35px;
-	margin-right: 10px;
-	display: none;
+#hamburgerButton {
+  display: none;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
 }
 
-#hamburgerButton:focus{
-	outline: none;
+#hamburgerButton:focus {
+  outline: none;
 }
 
-#darkView{
-	position: absolute;
-	/*top: 150px;*/
-	top: 80px;
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0,0,0,0.5);
-	display: none;
-	z-index: 9;
+#darkView {
+  position: absolute;
+  display: none;
+  /*top: 150px;*/
+  top: 80px;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-#slideInMenu{
-	position: absolute;
-	width: 100%;
-	height: 0px;
-	top: 80px;
-	/*background-color: red;*/
-	text-align: center;
-	background-color: white;
-	z-index: 10;
-	overflow: hidden;
-	border-top: 1px solid #f2f2f2;
+#slideInMenu {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 0;
+  z-index: 10;
+  overflow: hidden;
+  border-top: 1px solid #f2f2f2;
+  background-color: white;
+  /*background-color: red;*/
+  text-align: center;
 }
 
-#mobileNavBar{
-	margin: 0px;
-	margin: auto;
-	margin-top: 20px;
-	width: 80%;
-	height: 100%;
-	text-align: center;
-	/*background-color: orange;*/
+#mobileNavBar {
+  margin: 0;
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  /*background-color: orange;*/
 }
 
-.mobileNavCell{
-	width: 100%;
-	height: 40px;
-	text-align: center;
-	margin: 0px;
-	/*background-color: blue;*/
+.mobileNavCell {
+  margin: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  /*background-color: blue;*/
 }
-
 
 /*----------- mainView ------------*/
-#mainView{
-	/*margin: 0px;*/
-	margin: auto;
-	padding: 0px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	/*height: 500px;*/
-	/*height: 100%;*/
-	min-height: 1000px;
-	width: 90%;
-	/*background-color: green;*/
-	padding-bottom: 0px;
-	overflow: auto;
+#mainView {
+  /*margin: 0px;*/
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 375px;
+  padding: 0;
+  /*background-color: green;*/
+  padding-bottom: 0;
+  width: 90%;
+  /*height: 500px;*/
+  /*height: 100%;*/
+  /* min-height: 1000px; */
+  overflow: auto;
 }
 
 /*--------- about List-----------*/
-#aboutNavigation{
-
-	margin: 0px 0px 0px 0px;
-	padding: 0px;
-	width: 30%;
-	min-height: 750px;
-	/*background-color: red;*/
-	float: left;
-	text-align: center;
+#aboutNavigation {
+  margin: 0 0 0 0;
+  padding: 0;
+  width: 30%;
+  min-height: 750px;
+  /*background-color: red;*/
+  float: left;
+  text-align: center;
 }
 
-#aboutNavigation h1{
-	margin: 20px 0px 0px 0px;
-	padding: 10px 0px 10px 0px;
-	height: 50px;
-	width: 100%;
-	font-weight: 600;
-	font-size: 35px;
+#aboutNavigation h1 {
+  margin: 20px 0 0 0;
+  padding: 10px 0 10px 0;
+  width: 100%;
+  height: 50px;
+  font-weight: 600;
+  font-size: 35px;
 }
 
-#aboutList{
-	margin: auto;
-	padding: 0px;
-	height: 400px;
-	width: 200px;
-	/*background-color: orange;*/
+#aboutList {
+  margin: auto;
+  padding: 0;
+  width: 200px;
+  height: 400px;
+  /*background-color: orange;*/
 }
 
-#aboutList li{
-/*display: inline;*/
-	display: block;
-	float: none;
-	/*margin: 0px 15px 0px 15px;*/
-	margin: 10px 0px 10px 0px;
-
-	padding: 10px 0px 10px 0px;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	float: left;
-	width: 100%;
-	text-align: center;
-	color: black;
+#aboutList li {
+  /*display: inline;*/
+  display: block;
+  /*margin: 0px 15px 0px 15px;*/
+  margin: 10px 0 10px 0;
+  padding: 10px 0 10px 0;
+  width: 100%;
+  float: none;
+  float: left;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#ourMission h3{
-	/*font-size: 20px;*/
-	color:#ffcc00;
+#ourMission h3 {
+  /*font-size: 20px;*/
+  color: #ffcc00;
 }
 
 /*--------- contentPage-----------*/
 
-#contentPage{
-	margin: 0px;
-	padding: 0px;
-	width: 70%;
-	min-height: 750px;
-	/*background-color: blue;*/
-	float: left;
+#contentPage {
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  min-height: 750px;
+  /*background-color: blue;*/
+  float: left;
 }
 
 /* --------- missionPage --------*/
 
-#missionPage{
-	/*position: absolute;*/
-	/*background-color: red;*/
-	margin: 0px;
-	padding: 0px;
-	/*height: 100%;*/
-	min-height: 750px;
-	width: 700px;
-	margin: auto;
-	text-align: center;
-	display: block;
-
-	-webkit-transition-duration: 0.4s; /* Safari */
-	transition-duration: 0.4s;
-	/*transition: 0.3s;*/
+#missionPage {
+  display: block;
+  /*position: absolute;*/
+  /*background-color: red;*/
+  margin: 0;
+  margin: auto;
+  padding: 0;
+  width: 700px;
+  /*height: 100%;*/
+  min-height: 750px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+  /*transition: 0.3s;*/
 }
 
-#missionPage h1{
-
-	margin: 0px;
-	padding: 30px 0px 30px 0px;
-	width: 100%;
-	height: 50px;
-	color: grey;
+#missionPage h1 {
+  margin: 0;
+  padding: 30px 0 30px 0;
+  width: 100%;
+  height: 50px;
+  color: grey;
 }
 
-#missionPage p{
-	margin: 20px 0px 20px 0px;
-	padding: 0px 10px 0px 10px;
-	text-align: left;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 400;
-	font-size: 20px;
+#missionPage p {
+  margin: 20px 0 20px 0;
+  padding: 0 10px 0 10px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*--------- ourTeam -----------*/
-#teamPage{
-	/*position: absolute;*/
-	margin: 0px;
-	padding: 0px;
-	min-height: 1000px;
-	/*margin-top: 200px;*/
-	width: 700px;
-	/*width: 70%;*/
-	display: none;
-	/*float: left;*/
-	margin: auto;
-	/*margin: auto;*/
-	/*background-color: red;*/
-	overflow: auto;
-
-	-webkit-transition-duration: 0.4s; /* Safari */
-	transition-duration: 0.4s;
+#teamPage {
+  /*width: 70%;*/
+  display: none;
+  margin: auto;
+  padding: 0;
+  /*margin: auto;*/
+  /*background-color: red;*/
+  -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
 }
 
-#teamPage h1{
-	margin: 0px;
-	padding: 30px 0px 30px 0px;
-	width: 100%;
-	height: 50px;
-	color: grey;
-	/*background-color: yellow;*/
-	text-align: center;
+#teamPage h1 {
+  margin: 0;
+  padding: 30px 0 30px 0;
+  width: 100%;
+  height: 50px;
+  color: grey;
+  /*background-color: yellow;*/
+  text-align: center;
 }
 
-#memberList{
-	margin: auto;
-	margin-top: 110px;
-	padding: 0px;
-	width: 500px;
-	min-height: 640px;
-	/*background-color: orange;*/
+.memberList {
+  padding: 0;
+  /* width: 500px; */
+  width: 50%;
+  float: left;
+  /*background-color: orange;*/
 }
 
 /*-------- team member name ----------*/
-.teamMember{
-	/*background-color: orange;*/
-	margin: 0px;
-	padding: 0px;
-	height: 300px;
-	width: 50%;
+.teamMember {
+  display: block;
+  /*background-color: orange;*/
+  margin: 8px;
+  box-sizing: border-box;
+  color: black;
+  text-align: left;
+  letter-spacing: 2px;
+  /* font-weight: 500; */
+  font-family: 'Montserrat', sans-serif;
 }
 
-.teamMemberImage{
-	margin: auto;
-	margin-top: 20px;
-	height: 170px;
-	width: 170px;
-
+.teamMemberImage {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  float: left;
 }
 
-.memberName{
-	font-family: "Montserrat", sans-serif;
-	font-weight: 400;
-	color: gray;
-	padding: 10px 0px 10px 0px;
-	letter-spacing: 2px;
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
 }
 
-.memberPosition{
-	font-family: "Montserrat", sans-serif;
-	font-weight: 400;
-	color: gray;
-	padding: 10px 0px 10px 0px;
-	letter-spacing: 2px;
+.memberCardTop {
+  margin-bottom: 12px;
+  text-align: center;
 }
 
-.teamMember:hover{
-	background-color: #f2f2f2;
+.memberName {
+  padding: 65px 0 16px;
+  color: rgb(94, 94, 94);
+  /* text-indent: 8px; */
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.memberPosition {
+  /* padding: 10px 0 10px 0;
+  padding-bottom: 60px; */
+  color: gray;
+  /* text-indent: 30px; */
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 0.95em;
+  font-family: 'Montserrat', sans-serif;
+}
+.memberDescription {
+  text-indent: 40px;
+}
+
+/* .teamMember:hover {
+  background-color: #f2f2f2;
+} */
 
 /*---------- workshopsPage ---------*/
-#workshopsPage{
-	min-height: 1125px;
-	padding-bottom: 400px;
-	width: 100%;
-	/*background-color: red;*/
-	display: none;
+#workshopsPage {
+  /*background-color: red;*/
+  display: none;
+  padding-bottom: 400px;
+  width: 100%;
+  min-height: 1125px;
 }
 
-#workshopsPage h1{
-	/*margin: auto;*/
-	margin: 100px 0px 0px 10%;
-	width: 80%;
-	text-align: center;
-
+#workshopsPage h1 {
+  /*margin: auto;*/
+  margin: 100px 0 0 10%;
+  width: 80%;
+  text-align: center;
 }
 
 /*------ creativity workshop ---------*/
 
-#creativityWorkshop{
-	width: 80%;
-	height: 400px;
-	/*background-color: blue;*/
-	margin: auto;
+#creativityWorkshop {
+  /*background-color: blue;*/
+  margin: auto;
+  width: 80%;
+  height: 400px;
 }
 
-#creativityWorkshop h1{
-	text-align: center;
-	width: 100%;
-	color: gray;
-	/*background-color: orange;*/
-	padding-top: 10px;
-	padding-bottom: 20px;
+#creativityWorkshop h1 {
+  /*background-color: orange;*/
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  color: gray;
+  text-align: center;
 }
 
-#creativityWorkshop p{
-	font-family: "Work Sans", sans-serif;
-	font-size: 15px;
-	font-weight: 400;
-	padding-top: 10px;
-	padding-bottom: 10px;	
+#creativityWorkshop p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /*-------- career development workshop ----------*/
-#careerDevelopmentWorkshop{
-	width: 80%;
-	height: 400px;
-	/*background-color: green;*/
-	margin: auto;
+#careerDevelopmentWorkshop {
+  /*background-color: green;*/
+  margin: auto;
+  width: 80%;
+  height: 400px;
 }
 
-#careerDevelopmentWorkshop h1{
-	text-align: center;
-	width: 100%;
-	color: gray;
-	/*background-color: orange;*/
-	padding-top: 10px;
-	padding-bottom: 20px;
+#careerDevelopmentWorkshop h1 {
+  /*background-color: orange;*/
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  color: gray;
+  text-align: center;
 }
 
-#careerDevelopmentWorkshop p{
-	font-family: "Work Sans", sans-serif;
-	font-size: 15px;
-	font-weight: 400;
-	padding-top: 10px;
-	padding-bottom: 10px;	
+#careerDevelopmentWorkshop p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /*-------- launchYourStartup----------*/
-#launchYourStartup{
-	width: 80%;
-	height: 450px;
-	/*background-color: purple;*/
-	margin: auto;
-	text-align: center;
+#launchYourStartup {
+  /*background-color: purple;*/
+  margin: auto;
+  width: 80%;
+  height: 450px;
+  text-align: center;
 }
 
-#launchYourStartup h1{
-	text-align: center;
-	width: 100%;
-	color: gray;
-	/*background-color: orange;*/
-	padding-top: 10px;
-	padding-bottom: 20px;
+#launchYourStartup h1 {
+  /*background-color: orange;*/
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  color: gray;
+  text-align: center;
 }
 
-#launchYourStartup p{
-	font-family: "Work Sans", sans-serif;
-	font-size: 15px;
-	font-weight: 400;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: left;	
+#launchYourStartup p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
 }
 
-#applyLYSButton{
-	margin-top: 20px;
-	width: 150px;
-	height: 50px;
-	background-color: #ffcc00;
-	border-width: 0px;
-	font-family: "Montserrat", sans-serif;
-	font-size: 14px;
-	font-weight: 600;
-	box-shadow: 2px 2px 5px #e6e6e6; 
-	/*float: right;*/
+#applyLYSButton {
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  border-width: 0;
+  background-color: #ffcc00;
+  box-shadow: 2px 2px 5px #e6e6e6;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  /*float: right;*/
 }
 
-#applyLYSButton:focus{
-	outline: none;
+#applyLYSButton:focus {
+  outline: none;
 }
 
-#applyLYSButton:hover{
-	transition: 0.3s;
-	color:white;
-	background-color: black;
+#applyLYSButton:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
 }
 /*---------- footer view -----------*/
-#footerView{
-	margin: 0px;
-	/*margin-top: -100px;*/
-	padding: 0px;
-	background: black;
-	/*background-color: #f2f2f2;*/
-	height: 375px;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	/*text-align: center;*/
-	/*margin-top: -150px;*/
-	/*clear: both;*/
+#footerView {
+  position: absolute;
+  margin: 0;
+  /*margin-top: -100px;*/
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  /*background-color: #f2f2f2;*/
+  height: 375px;
+  background: black;
+  /*text-align: center;*/
+  /*margin-top: -150px;*/
+  /*clear: both;*/
 }
 
 /*------- subscribeView------------*/
-#subscribeView{
-	/*float: right;*/
-	/*position: absolute;*/
-	margin: auto;
-	margin-top: 25px;
-	height: 325px;
-	width: 700px;
-	background-color: black;
-	text-align: center;
-
+#subscribeView {
+  /*float: right;*/
+  /*position: absolute;*/
+  margin: auto;
+  margin-top: 25px;
+  width: 700px;
+  height: 325px;
+  background-color: black;
+  text-align: center;
 }
 
-#subscribeView h3{
-	/*margin-top: 40px;*/
-	/*margin-bottom: 10px;*/
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 25px;
-	color: white;
-	/*background-color: red;*/
+#subscribeView h3 {
+  /*margin-top: 40px;*/
+  /*margin-bottom: 10px;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  /*background-color: red;*/
 }
 
-#subscribeView h4{
-	/*margin-top: 40px;*/
-	/*margin-bottom: 10px;*/
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 14px;
-	color: white;
-	/*background-color: red;*/
+#subscribeView h4 {
+  /*margin-top: 40px;*/
+  /*margin-bottom: 10px;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  /*background-color: red;*/
 }
 
-.signUpField{
-	/*margin: 10px;*/
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	padding-left: 5px;
-	height: 30px;
-	width: 150px;
+.signUpField {
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  /*margin: 10px;*/
+  margin-left: 5px;
+  padding-left: 5px;
+  width: 150px;
+  height: 30px;
 }
 
-#subscribeView button{
-	margin-left: 5px;
-	width: 100px;
-	height: 35px;
-	background-color: #ffcc00;
-
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	font-size: 12px;
+#subscribeView button {
+  margin-left: 5px;
+  width: 100px;
+  height: 35px;
+  background-color: #ffcc00;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#subscribeView button:focus{
-	outline: none;
+#subscribeView button:focus {
+  outline: none;
 }
 
-#subscribedMessage{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	font-size: 18px;
-	margin-top: 15px;
-	color: white;
-	display: none;
+#subscribedMessage {
+  display: none;
+  margin-top: 15px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#subscribeView h5{
-	/*margin-top: 40px;*/
-	/*margin-bottom: 10px;*/
-	/*padding-top: 10px;*/
-	padding-bottom: 10px;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 12px;
-	color: white;
-	/*background-color: red;*/
+#subscribeView h5 {
+  /*margin-top: 40px;*/
+  /*margin-bottom: 10px;*/
+  /*padding-top: 10px;*/
+  padding-bottom: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  /*background-color: red;*/
 }
 
 /*------------ socialMedia Div -------------*/
-#socialMediaTitle{
-	/*background-color: blue;*/
-	margin-top: 30px;
-	margin-bottom: 10px;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 20px;
-	color: white;
+#socialMediaTitle {
+  /*background-color: blue;*/
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#socialMediaDiv{
-	/*background-color: red;*/
-	height: 50px;
-	width: 200px;
-	margin: auto;
-
+#socialMediaDiv {
+  margin: auto;
+  width: 200px;
+  /*background-color: red;*/
+  height: 50px;
 }
 
-
-#instagram{
-	position: relative;
-	height: 50px;
-	width: 50px;
-	padding: 0px;
-	margin-left: 15px;
-	margin-right: 10px;
-	/*margin: 25px 0px 25px 10px;*/
-	/*margin: auto;*/
-	float: left;
-	z-index: 1;
+#instagram {
+  position: relative;
+  margin-right: 10px;
+  margin-left: 15px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  /*margin: 25px 0px 25px 10px;*/
+  /*margin: auto;*/
+  float: left;
+  z-index: 1;
 }
 
-#facebook{
-	position: relative;
-	height: 45px;
-	width: 45px;
-	margin-top: 2.5px;
-	/*margin-right: 30px;*/
-	/*margin: 25px 0px 25px 10px;*/
-	/*margin:auto;*/
-	margin-right: 17px;
-	float: left;
-	z-index: 1;
+#facebook {
+  position: relative;
+  margin-top: 2.5px;
+  /*margin-right: 30px;*/
+  /*margin: 25px 0px 25px 10px;*/
+  /*margin:auto;*/
+  margin-right: 17px;
+  width: 45px;
+  height: 45px;
+  float: left;
+  z-index: 1;
 }
 
-#linkedin{
-	position: relative;
-	height: 45px;
-	width: 45px;
-	margin-top: 2.5px;
-	/*margin-right: 30px;*/
-	/*margin: 25px 0px 25px 10px;*/
-	/*margin:auto;*/
-	float: left;
-	z-index: 1;
+#linkedin {
+  position: relative;
+  margin-top: 2.5px;
+  width: 45px;
+  height: 45px;
+  /*margin-right: 30px;*/
+  /*margin: 25px 0px 25px 10px;*/
+  /*margin:auto;*/
+  float: left;
+  z-index: 1;
 }
 
 /*--------- change screen sizes ------------*/
-@media(max-width: 1580px){
+@media (max-width: 1580px) {
 }
 
-
-@media(max-width: 1250px){
+@media (max-width: 1250px) {
 }
 
+@media (max-width: 1125px) {
+  #mainView {
+    /*background-color: green;*/
+  }
 
-@media(max-width: 1125px){
-	#mainView{
-		/*background-color: green;*/
-	}
+  #contentPage {
+    /*background-color: magenta;*/
+  }
 
-	#contentPage{
-		/*background-color: magenta;*/
-	}
+  #missionPage {
+    width: 500px;
+  }
 
-	#missionPage{
-		width: 500px;
-	}
+  #teamPage {
+    width: 500px;
+  }
 
-	#teamPage{
-		width: 500px;
-	}
+  .memberList {
+    width: 100%;
+  }
 }
 
-@media(max-width: 830px){
+@media (max-width: 830px) {
+  #missionPage {
+    width: 400px;
+    /*background-color: orange;*/
+  }
 
-	#missionPage{
-		width: 400px;
-		/*background-color: orange;*/
-	}
+  #teamPage {
+    width: 400px;
+    /*background-color: brown;*/
+  }
 
-	#teamPage{
-		width: 400px;
-		/*background-color: brown;*/
-	}
+  .memberList {
+    /*background-color: blue;*/
+    /* width: 400px; */
+  }
 
-	#memberList{
-		/*background-color: blue;*/
-		width: 400px;
-	}
+  #aboutList {
+    width: 150px;
+  }
 
-	#aboutList{
-		width: 150px;
-	}
+  #aboutList li {
+    /*background-color: blue;*/
+    width: 100%;
+  }
 
-	#aboutList li{
-		/*background-color: blue;*/
-		width: 100%;
-	}
-
-	#aboutList li h3{
-		/*margin-left: 0px;*/
-		margin: 0px;
-		font-size: 20px;
-		text-align: center;
-		/*background-color: yellow;*/
-	}
+  #aboutList li h3 {
+    /*margin-left: 0px;*/
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    /*background-color: yellow;*/
+  }
 }
 
-@media(max-width: 700px){/*mobile phones*/
+@media (max-width: 700px) {
+  /*mobile phones*/
 
-	#teamPage{
-		min-height: 1100px;
-	}
+  #teamPage {
+    min-height: 1100px;
+  }
 
-	#footerView{
-		height: 450px;
-	}
+  #footerView {
+    height: 450px;
+  }
 
-	#subscribeView{
-		width: 500px;
-		height: 400px;
-		/*background-color: red;*/
-	}
+  #subscribeView {
+    width: 500px;
+    height: 400px;
+    /*background-color: red;*/
+  }
 
-	.signUpField{
-		width: 100px;
-	}
+  .signUpField {
+    width: 100px;
+  }
 }
 
-@media(max-width: 675px){
+@media (max-width: 675px) {
+  /*------- need to change the left navigation bar*/
 
-	/*------- need to change the left navigation bar*/
+  #aboutNavigation {
+    width: 100%;
+    /*background-color: red;*/
+    min-height: 160px;
+  }
 
-	#aboutNavigation{
-		/*background-color: red;*/
-		min-height: 160px;
-		width: 100%;
-	}
+  #aboutNavigation h1 {
+    height: 30px;
+    /*background-color: red;*/
+  }
 
-	#aboutNavigation h1{
-		height: 30px;
-		/*background-color: red;*/
-	}
+  #aboutList {
+    width: 100%;
+    height: 160px;
+  }
 
-	#aboutList{
-		width: 100%;
-		height: 160px;
-	}
+  #aboutList li {
+    margin-right: 1.667%;
+    /*background-color: blue;*/
+    margin-left: 1.667%;
+    width: 30%;
+    height: 50px;
+  }
 
-	#aboutList li{
-		/*background-color: blue;*/
-		margin-left: 1.667%;
-		margin-right: 1.667%;
-		width: 30%;
-		height: 50px;
-	}
+  /*------ content page --------*/
+  #contentPage {
+    /*background-color: magenta;*/
+    width: 100%;
+  }
 
-	/*------ content page --------*/
-	#contentPage{
-		/*background-color: magenta;*/
-		width: 100%;
-	}
+  #missionPage {
+    margin: auto;
+    /*background-color: red;*/
+  }
 
-	#missionPage{
-		margin: auto;
-		/*background-color: red;*/
-	}
+  /*-------- hamburger show -----------*/
+  #navItems {
+    display: none;
+  }
 
-	/*-------- hamburger show -----------*/
-	#navItems{
-		display: none;
-	}
+  #hamburgerButton {
+    display: block;
+  }
 
-	#hamburgerButton{
-		display: block;
-	}
-
-
-	/*------- memberList ---------*/
-	#teamPage{
-		/*background-color: orange;*/
-	}
-
-	#ourTeam
-
+  /*------- memberList ---------*/
+  #teamPage {
+    /*background-color: orange;*/
+  }
 }
 
-@media(max-width: 565px){
+@media (max-width: 565px) {
+  #contentPage {
+    min-height: 1200px;
+  }
 
-	#contentPage{
-		min-height: 1200px;
-	}
+  #teamPage {
+    min-height: 1200px;
+  }
 
-	#teamPage{
-		min-height: 1200px;
-	}
+  #aboutList li h3 {
+    margin-top: 15px;
+    font-size: 14px;
+  }
 
-	#aboutList li h3{
-		font-size: 14px;
-		margin-top: 15px;
-	}
+  /*-------- footer resize ----------*/
 
-	
-	/*-------- footer resize ----------*/
+  #footerView {
+    height: 550px;
+  }
 
-	#footerView{
-		height: 550px;
-	}
+  #subscribeView {
+    width: 300px;
+    height: 500px;
+    /*background-color: red;*/
+  }
 
-	#subscribeView{
-		width: 300px;
-		height: 500px;
-		/*background-color: red;*/
-	}
+  .signUpField {
+    width: 180px;
+    /*margin-right: 20px;*/
+  }
 
-	.signUpField{
-		width: 180px;
-		/*margin-right: 20px;*/
-	}
-
-	#signUpButton{
-		margin-bottom: 20px;
-	}
-
-
+  #signUpButton {
+    margin-bottom: 20px;
+  }
 }
 
-
-@media(max-width: 445px){
-	#mainView{
-		width: 100%;
-	}
+@media (max-width: 445px) {
+  #mainView {
+    width: 100%;
+  }
 }
 
-@media(max-width: 415px){
-	#mainView{
-		min-height: 1000px;
-	}
+@media (max-width: 415px) {
+  #mainView {
+    min-height: 1000px;
+  }
 
-	#contentPage{
-		/*width: 400px;*/
-		width: 100%;
-		min-height: 1200px;
-		margin: auto;
-	}
+  #contentPage {
+    margin: auto;
+    /*width: 400px;*/
+    width: 100%;
+    min-height: 1200px;
+  }
 
-	#missionPage{
-		/*width: 390px;*/
-		width: 100%;
-	}
+  #missionPage {
+    /*width: 390px;*/
+    width: 100%;
+  }
 
-	#workshopPage{
-		/*width: 390px;*/
-		width: 100%;
-	}
+  #workshopPage {
+    /*width: 390px;*/
+    width: 100%;
+  }
 
-	#teamPage{
-		/*width: 390px;*/
-		width: 100%;
-	}
+  #teamPage {
+    /*width: 390px;*/
+    width: 100%;
+  }
 
-	#memberList{
-		min-height: 1400px;
-		/*width: 390px;*/
-		width: 100%;
-		/*background-color: yellow;*/
-	}
+  .memberList {
+    /*width: 390px;*/
+    width: 100%;
+    /*background-color: yellow;*/
+  }
 
-	#memberList li{
-		/*width: 80%;*/
-		width: 100%;
-		margin: auto;
-	}
-
+  /* .memberList li {
+    margin: auto;
+    width: 80%;
+    width: 100%;
+  } */
 }
 
-@media(max-width: 400px){
-		/*------ description resize ---------*/
-	#profileView{
-		width: 300px;
-	}
+@media (max-width: 400px) {
+  /*------ description resize ---------*/
+  #profileView {
+    width: 300px;
+  }
 
-	#profileImage{
-		margin-left: 25px;
-	}
+  #profileImage {
+    margin-left: 25px;
+  }
 
-	#profileDescriptionDiv{
-		width: 90%;
-	}
-
-
+  #profileDescriptionDiv {
+    width: 90%;
+  }
 }
 
-@media(max-width: 378px){
-	#aboutList #ourMissionH3{
-		margin-top: 5px;
-		/*background-color: green;*/
-	}
+@media (max-width: 378px) {
+  #aboutList #ourMissionH3 {
+    margin-top: 5px;
+    /*background-color: green;*/
+  }
 }
 
+@media (max-width: 350px) {
+  #aboutNavigation {
+    /*background-color: red;*/
+  }
 
+  #aboutNavigation h1 {
+    /*background-color: green;*/
+  }
 
-@media(max-width: 350px){
-	#aboutNavigation{
-		/*background-color: red;*/
-	}
+  #aboutList li {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+    /*background-color: orange;*/
+    height: 15px;
+  }
 
-	#aboutNavigation h1{
-		/*background-color: green;*/
-	}
+  #aboutList li h3 {
+    margin-top: 0;
+  }
 
-	#aboutList li{
-		/*background-color: orange;*/
-		height: 15px;
-		margin: 0px;
-		width: 100%;
-		margin-top: 10px;
-	}
+  #aboutList #ourMissionH3 {
+    margin-top: 0;
+    /*background-color: green;*/
+  }
 
-	#aboutList li h3{
-		margin-top: 0px;
-	}
+  #missionPage h1 {
+    font-size: 24px;
+  }
 
-	#aboutList #ourMissionH3{
-		margin-top: 0px;
-		/*background-color: green;*/
-	}
-
-	#missionPage h1{
-		font-size: 24px;
-	}
-
-	#missionPage p{
-		text-align: center;
-	}
-
-
-
+  #missionPage p {
+    text-align: center;
+  }
 }
-
-
-
-
-

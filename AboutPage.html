@@ -10,7 +10,7 @@
 </head>
 <body>
 
-	<div id = "profileDiv">
+	<!-- <div id = "profileDiv">
 		<div id = "profileView">
 			<img src="./images/blackClear.png" id = "blackClear" onclick="handleClearProfile();"/>
 			<img src="./images/defaultImage.jpg" id = "profileImage"/>
@@ -18,9 +18,9 @@
 			<div id = "profileDescriptionDiv">
 				<p id = "profileDescription">Aaron is a UCSC undergraduate student studying Business Management Economics (BME) and Technology Information Management (TIM). He has a tremendous amount of passion in entrepreneurship, ethics, and technology. Motivated by using innovative methods to better human condition, Aaron was involved in multiple non-profit organizations. He’s currently working on his own startup - “The Glove” which aims to develop hardware and software to elevate human-robotics integration through augmented reality.</p>
 			</div>
-			
+
 		</div>
-	</div>
+	</div> -->
 
 	<div id = "container">
 		<div id = "navBar">
@@ -35,7 +35,7 @@
 			<input type="image" src = "./images/hamburger.png" id = "hamburgerButton" onclick = "handeMobileNav();">
 			<div id = "darkView">
 
-			</div>	
+			</div>
 			<div id = "slideInMenu">
 				<ul id = "mobileNavBar">
 					<li class = "mobileNavCell"><a href="./index">Home</a></li>
@@ -56,7 +56,7 @@
 				</ul>
 			</div>
 			<div id = "contentPage">
-				
+
 				<div id = "missionPage">
 					<h1>" Connect, Collaborate, Create "</h1>
 					<p> SCEE aims to build a diverse community of student innovators and creative problem solvers. We encourage students, through our engaging events and workshops, to have unique insights on social and technical problems our society’s facing today. We believe that innovation is the only way forward.</p>
@@ -85,7 +85,7 @@
 						</p>
 
 						<p>
-							Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Ut consequat semper viverra nam libero justo laoreet sit amet. Pellentesque habitant morbi tristique senectus et netus et. Quis vel eros donec ac odio. Mauris nunc congue nisi vitae suscipit tellus mauris a. 
+							Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Ut consequat semper viverra nam libero justo laoreet sit amet. Pellentesque habitant morbi tristique senectus et netus et. Quis vel eros donec ac odio. Mauris nunc congue nisi vitae suscipit tellus mauris a.
 						</p>
 					</div>
 
@@ -103,17 +103,22 @@
 
 						<button id = "applyLYSButton">Apply Now</button>
 					</div> -->
-					
+
 				</div>
 
 				<div id = "teamPage">
 					<h1>Our Team</h1>
-					<ul id = "memberList">
-						<!-- <li class = "teamMember" onclick = "handleProfilePressed();">
-							<img class = "teamMemberImage" src="./images/defaultImage.jpg">
-							<h3 class = "memberName">Name goes here</h3>
-							<h3 class ="memberPosition">Position goes here</h3>
+					<ul id = "memberColumn1" class="memberList">
+						<!-- <li class = "teamMember" >
+							<div class="memberCardTop  clearfix">
+								<img class = "teamMemberImage" src="./images/defaultImage.jpg">
+								<h3 class = "memberName" >Name goes here</h3>
+								<h3 class ="memberPosition">Position goes here</h3>
+							</div>
+							<p class ="memberDescription">A long and descriptively worded well poised personal descriptuonds goes here. and here too.A long and descriptively worded well poised personal descriptuonds goes here. and here too.</p>
 						</li> -->
+					</ul>
+					<ul id = "memberColumn2" class="memberList">
 
 					</ul>
 				</div>
@@ -124,7 +129,7 @@
 		<footer id = "footerView">
 			<!-- <img src="ucscSeal.png" id="sammy">
 			<img src="sammy.jpg" id="sammy"> -->
-			
+
 
 			<div id = "subscribeView">
 				<h3>SUBSCRIBE</h3>
@@ -143,7 +148,7 @@
 				</div>
 			</div>
 			<!-- <h3 id = "copyright">&copy SCEE</h3> -->
-			
+
 		</footer>
 	</div>
 </body>
