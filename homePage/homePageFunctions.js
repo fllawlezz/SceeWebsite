@@ -148,12 +148,12 @@ function handeMobileNav(){
 	
 }
 
-function handleToEvents(){
-	location.href = "./eventsPage.html";
+function handleToBigIdeas() {
+	window.location.href = "https://bigideascontest.org/";
 }
 
 function handleToSignUp(){
-	window.location.href = "https://www.eventbrite.com/e/design-your-life-workshop-with-dave-evans-tickets-61257674353";
+	window.location.href = "https://www.eventbrite.com/e/slug-tank-the-future-of-student-entrepreneurship-workshop-tickets-73707133019";
 }
 
 
